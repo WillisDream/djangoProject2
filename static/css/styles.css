@@ -1,0 +1,21 @@
+body {
+    background-color: #fafafa;
+    /*padding-top: 50px;*/
+}
+
+.todo-item{
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    background-color: #fff;
+    margin: 10px;
+    padding: 10px;
+}
+.completed{
+    background-color: #8080802e;
+}
+.completed .text{
+    text-decoration: line-through;
+}
+.not-completed{
+    background-color: #fff;
+}

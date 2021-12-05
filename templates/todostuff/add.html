@@ -1,0 +1,20 @@
+ {% extends 'todostuff/base.html' %}
+
+{% block title %}
+    <title>Create Post</title>
+{% endblock %}
+
+{% block body %}
+
+    <div class="container">
+        <h1 class="text-center text-secondary display-4">TO-DO-LIST</h1>
+        <form action="{% url 'add' %}" method="post">
+            {% csrf_token %}
+            <div class="input-group mb-3">
+                <div class="form-control p-0">{{form.new_post}}</div>
+                <button class="btn btn-outline-primary" type="submit">Add</button>
+            </div>
+        </form>
+    </div>
+
+{% endblock %}
